@@ -6,7 +6,7 @@ from my_select_advanced import *
 
 
 # Step 1: Set up the SQLAlchemy session
-DATABASE_URL = "sqlite:///your_database.db"  
+DATABASE_URL = "postgresql://postgres:some-password@localhost:5432/my_data_base"
 engine = create_engine(DATABASE_URL)
 Session = sessionmaker(bind=engine)
 session = Session()
